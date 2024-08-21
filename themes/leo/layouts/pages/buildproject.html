@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Additional CSS for maintaining image aspect ratio */
+        .image-container img {
+            width: 100%;
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+       
+        /* Custom class for adding margin-bottom to rows */
+        .row-gap > .row:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        /* Style for unclicked buttons */
+.btn:not(.active) {
+    background-color: rgb(185, 185, 185) !important;
+    border: none;
+}
+
+/* Style for clicked button */
+.btn.active {
+    background-color: #072446 !important;
+}
+
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="button-group text-center mt-4">
+        <a  class="btn btn-primary all-button" data-filter="all">All</a>
+        <a  class="btn btn-primary" data-filter="commercial">Commercial</a>
+        <a  class="btn btn-primary" data-filter="residential">Residential</a>
+        <a  class="btn btn-primary" data-filter="specialized">Specialized</a>
+    </div>
+
+    <div class="row image-container mt-5 row-gap"> <!-- Add row-gap class here -->
+   
+        <div class="col-md-4 commercial-image specialized-image">
+            <img src="/img/projects/31.jpg" alt="all"  style="margin-top:20px" >
+            <figcaption class="text-white bg-dark p-2">Ooredoo-Data Center</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image specialized-image">
+            <img src="/img/projects/32.jpg" alt="Commercial Image 2" style="margin-top:20px">
+            <figcaption class="text-white bg-dark p-2">IP2 Duqm Port</figcaption>
+        </div>
+
+        <!-- Residential Images -->
+        <div class="col-md-4 specialized-image">
+            <img src="/img/projects/28.jpeg" alt="Residential Image 1"  style="margin-top:20px">
+            <figcaption class="text-white bg-dark p-2">Mosque For MHD</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image" style="margin-top:20px">
+            <img src="/img/projects/49.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">Hypermarket at Ruwi</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image" style="margin-top:20px">
+            <img src="/img/projects/35.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">Workshop at Sohar</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/3.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">Hilton Salalah</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image specialized-image" style="margin-top:20px">
+            <img src="/img/projects/34.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">5 Villa At Qurum</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/37.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">Al Khuwair Villa</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image specialized-image" style="margin-top:20px">
+            <img src="/img/projects/36.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">OHI Telecom-Buraimi</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/24.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2">VIP Hall</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/9.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Construction of Residential/ Commercial Building</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/10.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Al Enaam Commericial Building</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/ali.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Ali-Abdul karim Building</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/26.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Buildings in Telal Qurm Complex</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/4.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Work Shop</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/25.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >  VIP Lounge in Muscat Airport</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/5.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Scania</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image" style="margin-top:20px">
+            <img src="/img/projects/38.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Swimming Pool</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/39.png" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Luxury Villa at Baushar</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/40.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Residential/Commericial Building-Ali Juma</figcaption>
+        </div>
+        <div class="col-md-4 specialized-image" style="margin-top:20px">
+            <img src="/img/projects/50.png" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Residential/Commericial Building-Ali Juma</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/42.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Muamir Commercial Building</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/43.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Residential/Commericial Building Mobela</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/41.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >7 Town Houses</figcaption>
+        </div>
+      
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/45.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >6 Town Houses in Baushar</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image specialized-image" style="margin-top:20px">
+            <img src="/img/projects/47.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Centre Point Sohar</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/46.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Wali office at shinas</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image residential-image" style="margin-top:20px">
+            <img src="/img/projects/44.jpeg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Suhail Bahwan Residential/Commericial Building</figcaption>
+        </div>
+        <div class="col-md-4 commercial-image specialized-image" style="margin-top:20px">
+            <img src="/img/projects/48.jpg" alt="Residential Image 2" >
+            <figcaption class="text-white bg-dark p-2" style="font-size: 15px;" >Sabco, Wattayah</figcaption>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const allButton = document.querySelector('.all-button');
+        const commercialButton = document.querySelector('[data-filter="commercial"]');
+        const residentialButton = document.querySelector('[data-filter="residential"]');
+        const specializedButton = document.querySelector('[data-filter="specialized"]');
+        const filterButtons = document.querySelectorAll('.btn'); // Select all filter buttons
+    
+        // Function to show images based on filter
+        function showImages(filter) {
+            const images = document.querySelectorAll('.col-md-4');
+            images.forEach(div => {
+                if (filter === 'all' || div.classList.contains(filter + '-image')) {
+                    div.style.display = 'block';
+                } else {
+                    div.style.display = 'none';
+                }
+            });
+        }
+    
+        // Function to handle button click
+        function handleButtonClick(clickedButton) {
+            // Remove active class from all buttons
+            filterButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            // Add active class to the clicked button
+            clickedButton.classList.add('active');
+        }
+    
+        // Adding click event listeners to each button
+        allButton.addEventListener('click', function() {
+            handleButtonClick(allButton);
+            showImages('all');
+        });
+    
+        commercialButton.addEventListener('click', function() {
+            handleButtonClick(commercialButton);
+            showImages('commercial');
+        });
+    
+        residentialButton.addEventListener('click', function() {
+            handleButtonClick(residentialButton);
+            showImages('residential');
+        });
+    
+        specializedButton.addEventListener('click', function() {
+            handleButtonClick(specializedButton);
+            showImages('specialized');
+        });
+    });
+    
+</script>
+</body>
+</html>

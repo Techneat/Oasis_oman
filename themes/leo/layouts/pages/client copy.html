@@ -1,0 +1,421 @@
+{{ define "main"}}
+<style>
+    /* Other existing styles remain unchanged */
+
+    .banner-container {
+        position: relative;
+        background-image: url('/img/clientsframe.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 350vh; /* Adjust minimum height to full viewport height */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-container2 {
+        position: relative;
+        background-image: url('/img/secondban.jpg');
+        background-size: cover;
+        background-position: center;
+        min-height: 150vh; /* Adjust minimum height to full viewport height */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+
+    .images-container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 20px;
+        gap: 35px;
+    }
+
+    .images-container2 {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 20px;
+        gap: 35px;
+        font-size: 25px;
+        color: white;
+    }
+
+    .logo {
+        width: 20%; /* Adjust the width of each logo container */
+        text-align: center;
+        margin: 10px;
+        margin-top: 10px;
+        transition: transform 0.2s;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        animation: pop-up 1s ease forwards;
+    }
+
+    @keyframes pop-up {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .logo:hover {
+        transform: scale(1.2);
+    }
+
+    #scrollToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 999;
+        transition: transform 0.3s;
+        animation: slideInRight 0.5s forwards;
+    }
+
+    @keyframes slideInRight {
+        from {
+            right: -100px;
+            opacity: 0;
+        }
+
+        to {
+            right: 20px;
+            opacity: 1;
+        }
+    }
+
+    #scrollToTopBtn:hover {
+        opacity: 0.8;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="banner-container">
+        <div class="banner-background">
+            <h2 style="text-align: center;margin-top:20px;color:white;font-size:25px;font-weight: 600;">Diplomatic and Ministries</h2>
+            <div class="images-container col-sm-6">
+                <div class="logo">
+                    <img src="/img/clients/chamber-oman.png" alt="Logo 1">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/logo.png" alt="Logo 2">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/logo-1.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/logo-3.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/us.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/ministry-of-defence.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/royal.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/def.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/Royal-Air-Force-of-Oman-Logo.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/mini.jpg" alt="Logo 4">
+                </div>
+              
+                <div class="logo">
+                    <img src="/img/clients/oaa.jpg" alt="Logo 4">
+                </div>
+                <!-- Repeat this for the other logos -->
+            </div>
+            <h2 class="images-container2"style="font-weight: 600;">Private Companies</h2>
+            <div class="images-container col-sm-6">
+                
+                <div class="logo">
+                    <img src="/img/clients/sun-packing.png" alt="Logo 1">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/muscat-overseas.png" alt="Logo 2">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/eastern-overseas.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/sri-lankan.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/jotun-logo.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/centerpoint-logo.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/nuhas-oman.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/the-middle-east.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/bec-logo.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/lt-oman.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/sts.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/al-turki.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/first-choice.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/logoENG-1.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/lulu-group-logo-en.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/mds.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/sfo.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/cat.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/lan.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/dmc.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/logo (1).png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/sg.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/fs.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/ss.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/nesto.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m1.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m2.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m3.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m4.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m5.jpeg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m6.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m7.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m8.jpeg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m9.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m10.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m11.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m12.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m13.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m14.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m15.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m16.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m17.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m18.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m19.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/clients/m20.png" alt="Logo 4">
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="banner-container2">
+        <div class="banner-background">
+            <h2 style="text-align: center;margin-top:20px;color:white;font-size:25px;font-weight: 600;">Our Consultant</h2>
+            <div class="images-container">
+                <div class="logo">
+                    <img src="/img/consul/logo-6-1.png" alt="Logo 1">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/logo-5-1.png" alt="Logo 2">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/logo-4-2.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/logo-1-1-1.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/logo-3-1-1.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/logo-2-1.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/logo-hadi-1.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/esignUnitlogo.jpg" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/41f42b3ca3.jpg" alt="Logo 1">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/Architectural-Wall-Systems.jpg" alt="Logo 2">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/Picture1-1.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/Picture1-2.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/Picture.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/12.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/13.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/5.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/9.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/13-1.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/18.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/19.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/21.png" alt="Logo 3">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/15.png" alt="Logo 4">
+                </div>
+                <div class="logo">
+                    <img src="/img/consul/20.png" alt="Logo 3">
+                </div>  <button id="scrollToTopBtn" onclick="scrollToTop()" title="Go to top">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <div class="logo">
+                    <img src="/img/consul/24.png" alt="Logo 4">
+                </div>
+           
+            </div>
+        </div>
+    </div>
+    <script>
+    
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        window.onscroll = function() { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
+{{end}}

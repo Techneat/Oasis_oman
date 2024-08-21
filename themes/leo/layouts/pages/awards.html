@@ -1,0 +1,76 @@
+{{ define "main" }}
+<link href="/resource/css1/animate.css" rel="stylesheet">
+<link href="/resource/css1/flaticon.css" rel="stylesheet">
+<link href="/resource/css1/jquery.fancybox.min.css" rel="stylesheet">
+<link href="/resource/css1/owl.css" rel="stylesheet">
+<link href="/resource/css1/swiper.min.css" rel="stylesheet">
+
+
+<link href="/resource/css1/popup.css" rel="stylesheet">
+<link href="/resource/css1/font-awesome.css" rel="stylesheet">
+
+<!-- <link href="/resource/css1/bootstrap.css" rel="stylesheet"> -->
+<link href="/resource/css1/magnific-popup.css" rel="stylesheet">
+<!-- <link href="/resource/css1/style.css" rel="stylesheet"> -->
+<link href="/resource/css1/responsive.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+
+
+<section class="portfolio-one-section" style="background-color: #042041;">
+    <div class="container">
+        <div class="portfolio-one-content">
+            <div class="sortable-masonry">
+                <div class="about-two-title">
+                    <h2 style="text-align: center; color: antiquewhite;">Awards and <span style="color: #007bff;">Certifications</span></h2>
+                </div>
+
+                <div class="row items-container">
+                    {{ $s3BaseURL := "https://oasisoman.s3.ap-south-1.amazonaws.com/images" }}
+                    {{ range .Params.otherImages }}
+                        <div class="col-xl-6 col-lg-6 col-md-4 col-sm-4 masonry-item all mechanical chemical material">
+                            <div class="portfolio-one-single">
+                                <div class="portfolio-one-img-box">
+                                    <img src="{{ $s3BaseURL }}/{{ .pic }}" alt="{{ .caption }}">
+                                    <div class="col-12" style="position: absolute;bottom: 10px;left: 10px;color: white;font-size: 15px;text-align: center;">
+                                        <div style="text-align: center;font-weight: bolder;">{{ .caption }}</div>
+                                    </div>
+                                    <div class="portfolio-two-icon-box">
+                                        <a href="{{ $s3BaseURL }}/{{ .pic }}" class="img-popup"><i class="fa fa-search"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{ end }}
+                    
+                </div>
+
+                <div class="row items-container">
+                    <!--Single Case One-->
+                    {{ $s3BaseURL := "https://oasisoman.s3.ap-south-1.amazonaws.com/images" }}
+                    {{ range $imageContent := .Params.galleryImages }}
+
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 masonry-item all mechanical chemical material">
+                        <div class="portfolio-one-single">
+                            <div class="portfolio-one-img-box">
+                                <img src="{{ $s3BaseURL }}/{{ $imageContent }}" alt="">
+                               
+                                <div class="portfolio-two-icon-box">
+                                    <a href="{{ $s3BaseURL }}/{{ $imageContent }}" class="img-popup"><i
+                                            class="fa fa-search"></i></a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                    <!--Single Case One-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{ end }}

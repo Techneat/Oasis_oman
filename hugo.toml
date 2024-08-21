@@ -1,0 +1,46 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'leo'
+themesDir = "themes"
+defaultContentLanguage = "en"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+
+# number of words of summarized post content (default 70)
+summaryLength = 70
+
+# Define the number of posts per page
+paginate = 10
+
+# not pluralize title pages by default
+pluralizelisttitles = false
+
+
+
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'About Us'
+    pageRef = '/about'
+    weight = 20
+    [[menus.main]]
+    name = 'Services'
+    pageRef = '/services'
+    weight = 30  
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/#/'
+    weight = 40
+  [[menus.main]]
+    name = 'Careers'
+    pageRef = '/careers'
+    weight = 50
+  [[menus.main]]
+    name = 'Contact Us'
+    pageRef = '/contact'
+    weight = 60

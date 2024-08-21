@@ -1,0 +1,202 @@
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/isotope.pkgd.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/jquery.mousewheel.min.js" charset="utf-8"></script>
+<script src="/js/raphael.min.js" charset="utf-8"></script>
+<script src="/js/maps/jquery.mapael.js" charset="utf-8"></script>
+<script src="/js/maps/france_departments.js" charset="utf-8"></script>
+<script src="/js/maps/world_countries.js" charset="utf-8"></script>
+<script src="/js/maps/usa_states.js" charset="utf-8"></script>
+<script src="/js/map_location_details.js" charset="utf-8"></script>
+<script src="/js/lightslider.js"></script>
+<script src= "/js/filter.js"></script>
+<script src="/js/contact.js"></script>
+<script src="/js/validate.js"></script>
+
+
+<script>
+ ( function($) {
+   $(document).ready(function() {
+     $window = $(window);
+     $(window).scroll(function(){
+       if($window.scrollTop() > 100)
+         $(".top-header").addClass("active");
+       else    
+         $(".top-header").removeClass("active");
+         
+       if($window.scrollTop() > 100)
+         $("#menufix").addClass("active_more");
+       else    
+         $("#menufix").removeClass("active_more");
+     });
+   });
+ })( jQuery );
+</script>
+<!-- Owl Stylesheets -->
+<link rel="stylesheet" href="/css/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="/css/owlcarousel/assets/owl.theme.default.min.css">
+<script src="/js/owlcarousel/owl.carousel.min.html" charset="utf-8"></script>
+<script>
+ $(document).ready(function(){
+   $('#carouselExampleControls video').height($('#carouselExampleControls .carousel-item').height());
+ });
+</script>
+<script src="/js/wow.js"></script>
+<script src="/js/common.js"></script>
+<script id="rendered-js">
+ $('body').on('mouseenter mouseleave', '.dropdown-hover', function (e) {
+ let dropdown = $(e.target).closest('.dropdown-hover');
+ dropdown.addClass('show');
+ 
+ setTimeout(function () {
+ dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+ }, 200);
+ });
+ //# sourceURL=pen.js
+</script>
+<script>
+ function openSideNav() {
+     document.getElementById("mySidenav").style.width = "250px";
+ }
+ 
+ /* Set the width of the side navigation to 0 */
+ function closeNav() {
+     document.getElementById("mySidenav").style.width = "0";
+ }
+</script>
+<script src="/js/dReadmore.js"></script>
+<script>
+ $(".d-readmore").dReadmore({
+ beforeToggle: function($element, expanded) {
+       if (!expanded) {
+           console.log("true")
+       }
+   },
+   afterToggle: function($element, expanded) {
+       if (expanded) {
+           console.log("true")
+       }
+   }
+ });
+</script>
+<script>
+ $(document).ready(function(){
+ var lazyloadImages = document.querySelectorAll("img.lazy");    
+        var lazyloadThrottleTimeout;
+        
+        function lazyload () {
+          if(lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }  
+          
+          lazyloadThrottleTimeout = setTimeout(function() {
+              var scrollTop = window.pageYOffset;
+              lazyloadImages.forEach(function(img) {
+                  if(img.offsetTop < (window.innerHeight + scrollTop)) {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                  }
+              });
+              if(lazyloadImages.length == 0) { 
+                document.removeEventListener("scroll", lazyload);
+                window.removeEventListener("resize", lazyload);
+                window.removeEventListener("orientationChange", lazyload);
+              }
+          }, 20);
+        }
+        lazyload();
+ 
+     $(".slidingDiv").hide();
+     $(".show_hide").show();
+     
+     $('.show_hide').click(function(){
+        $(".slidingDiv").slideToggle();
+     });
+     
+     $(document).on('click', function (e) {
+       var divwidth=$("#mySidenav");  
+       var closeset=$(e.target).closest(".sidenav");
+       if (closeset.length=== 0 && divwidth.width()!="0") { 
+            divwidth.width('0');
+       }   
+     });
+ 
+ 
+ });
+</script>
+
+
+
+<script id="rendered-js">
+   $('body').on('mouseenter mouseleave', '.dropdown-hover', function (e) {
+   let dropdown = $(e.target).closest('.dropdown-hover');
+   dropdown.addClass('show');
+   
+   setTimeout(function () {
+   dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+   }, 200);
+   });
+   //# sourceURL=pen.js
+</script>
+<script>
+   function openSideNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+   }
+   
+   /* Set the width of the side navigation to 0 */
+   function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+    }
+   
+    
+</script>
+<script>
+   $(document).ready(function(){
+   $(".projects_grid").click(function () {
+      window.location = "all-projects/index.html";        
+   });	
+   $('#sliderFrame').carousel({
+pause: "false"
+});
+   
+   
+   /*$(".slidingDiv").hide();
+   $(".show_hide").show();
+   
+   $('.show_hide').click(function(){
+   $(".slidingDiv").slideToggle();
+   });*/
+   
+   $(document).on('click', function (e) {
+   var divwidth=$("#mySidenav");  
+   var closeset=$(e.target).closest(".sidenav");
+   if (closeset.length=== 0 && divwidth.width()!="0") { 
+        divwidth.width('0');
+   }   
+   });
+   
+   
+   });
+</script>
+
+<script type="text/javascript" src="_Incapsula_Resource0353?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=3&amp;cb=1676931643" async></script></body>
+
+
+
+
+<!-- service page script -->
+<script src="/resource/js/bootstrap.min.js"></script>
+<script src="/resource/js/swiper.min.js"></script>
+<script src="/resource/js/appear.js"></script>
+<script src="/resource/js/jquery.countTo.js"></script>
+<script src="/resource/js/isotope.js"></script>
+<script src="/resource/js/owl.js"></script>
+<script src="/resource/js/wow.js"></script>
+<script src="/resource/js/jquery.fancybox.js"></script>
+<script src="/resource/js/TweenMax.min.js"></script>
+<script src="/resource/js/jquery.magnific-popup.min.js"></script>
+<script src="/resource/js/parallax.min.js"></script>
+<script src="/resource/js/custom.js"></script>
+<script src="/resource/js/popup.js"></script>
+<!-- service page script -->

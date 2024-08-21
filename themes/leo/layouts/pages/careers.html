@@ -1,0 +1,178 @@
+{{ define "main" }}
+
+<section class="banner-wrapper homepagebanner wow fadeIn" data-wow-duration="2s">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+     
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://oasisoman.s3.ap-south-1.amazonaws.com/images/career5.jfif" class="d-block w-100" alt="" style="height: 300px; object-fit: cover;">
+            {{/*  <img src="/img/banner/new1.jpg" class="d-block w-100" alt="" style="height: 300px; object-fit: cover;">  */}}
+           <h1 class="banner-header wow fadeInUp" data-wow-duration="2s">Careers<span></span></h1>
+        </div>
+      </div>
+    </div>
+</section>
+ 
+<div class="whoweareOuter whitesketch borderBottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 noPadding">
+                <div class="whoweareLeftTop">
+                    <div class="inner-text">
+                        <h2 class="header-with-style-6 wow fadeInDown" data-wow-duration="2s">
+                            Career Opportunities 
+                            <div class="blueLine">
+                                <div class="yellowLine"></div>
+                            </div>
+                        </h2>
+                        <p>Welcome you to Oasis Grace LLC Careers page, which aims at providing you with information on the career opportunities with us. We look forward to your joining our team of Engineers & Professionals. <br>We find that ideas accelerate when people with different capabilities get together. The culture of inclusivity throughout Oasis Grace LLC will give you a greater sense of involvement and help you build on your experience in the oil & gas, water & power sectors. People thrive when given the freedom to express their professional passion and demonstrate their individual creativity. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 noPadding">
+                <div>
+                    <div class="wow fadeInRight" data-wow-duration="2s" ><img src="https://oasisoman.s3.ap-south-1.amazonaws.com/images/career3.jpg" alt="" class="img-fluid acr"/></div>
+                </div>
+            </div>
+        </div>
+       
+            <div class="row">
+                <div class="col-lg-6 col-md-12 noPadding" id="imageDiv">
+                    <div class="wow fadeInLeft" data-wow-duration="2s"><img src="https://oasisoman.s3.ap-south-1.amazonaws.com/images/career2.jpg" alt="" style="width: 100%;" class="img-fluid" /></div>
+                </div>
+                <div class="col-lg-6 col-md-12" id="textDiv"style="padding-left:0px">
+                    <div class="whoweareLeftTop ">
+                        <div class="inner-text mgl">
+                            <h2 class="header-with-style-6 wow fadeInDown" data-wow-duration="2s">
+                                Our Employees
+                                <div class="blueLine">
+                                    <div class="yellowLine"></div>
+                                </div>
+                            </h2>
+                            <p>Oasis Grace LLC employs 2540 + people from different nationalities who bring new ideas and ways of thinking that help us in our continuous strive for business success. Our employees understand they have a role to play and are expected to perform to high standards.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        <div class="dee"></div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 noPadding">
+                <div class="whoweareLeftBottom">
+                    <div class="inner-text">
+                        <h2 class="header-with-style-6 wow fadeInDown" data-wow-duration="2s">
+                            Why Oasis LLC?
+                            <div class="blueLine w65">
+                                <div class="yellowLine"></div>
+                            </div>
+                        </h2>
+                        <p>ur collaborative culture values creativity and fresh perspectives. A career with Oasis Grace LLC puts you at the forefront of innovation, working towards building a better future. Working alongside professionals from a diversity of disciplines and backgrounds will help propel your career <br>
+
+                        Alternatively, you can mail your CV’s with the latest photograph to info@oasisgrace.com <br>
+                        
+                        Wishing you the very best! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 noPadding" >
+                <div>
+                    <div class="wow fadeInRight" data-wow-duration="2s" ><img src="https://oasisoman.s3.ap-south-1.amazonaws.com/images/career4.jpg" alt=""  style="width: 100%;" class="img-fluid"/></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+   .acr{
+   width: 100%;
+    height: auto;
+   }
+   .dee{
+margin-top: 0px;
+}
+.mgl{
+margin-left: 30px;
+
+}
+ @media only screen and (max-width: 1199px) {
+   .acr{
+      width: 100%;
+      height: auto;
+   height: 375px;
+  }
+  }
+
+  @media (max-width: 1024px) {
+    #imageDiv {
+        order: 2;
+    }
+
+    #textDiv {
+        order: 1;
+    }
+    .dee{
+        margin-top: 100px;
+        }
+   }
+   @media (min-width: 992px) and (max-width: 1024px) {
+    #textDiv {
+        width: 50%; /* Adjust width of text column */
+        /* Add some space between columns */
+    }
+
+    .img-fluid {
+        max-width: 100%; /* Ensure image is responsive within its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .mgl{
+        margin-left: 0px;
+        }
+}
+@media only screen and (max-width: 768px){
+   
+    .dee{
+        margin-top: 0px;
+        }
+ }
+   @media only screen and (max-width: 425px){
+    .acr {
+        width: 100%;
+        height:100%;
+    }
+    .dee{
+        margin-top: 0px;
+        }
+        .mgl{
+            margin-left: 0px;
+            
+            }
+ }
+   @media only screen and (max-width: 375px){
+    .acr {
+        width: 100%;
+        height:100%;
+    }
+    .dee{
+        margin-top: 0px;
+        }
+
+        .mgl{
+            margin-left: 0px;
+            
+            }
+ }
+   @media only screen and (max-width: 320px){
+   .acr {
+       width: 100%;
+       height:100%;
+   }
+   .dee{
+    margin-top: 0px;
+    }
+    .mgl{
+        margin-left: 0px;
+        
+        }
+}
+</style>
+{{ end }}

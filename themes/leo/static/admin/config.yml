@@ -1,0 +1,93 @@
+backend:
+  name: git-gateway
+  branch: main 
+
+media_folder: "static/img"
+public_folder: "/img"
+publish_mode: editorial_workflow
+
+collections:
+  - name: "about-us"
+    label: "About Us"
+    files:
+      - label: "Awards & Certifications"
+        name: "awards"
+        file: "content/awards.md"
+        fields:
+          - label: "Gallery Images"
+            name: "galleryImages"
+            widget: "list"
+            field: { label: "Image", name: "image", widget: "image" }
+          - label: "Other Images"
+            name: "otherImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "pic", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - label: "Completed Projects"
+        name: "completed-projects"
+        file: "content/projects.md"
+        fields:
+          - label: "All images"
+            name: "allImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+
+          - label: "Commercial images"
+            name: "commercialImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+          
+          - label: "Residential images"
+            name: "residentialImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+        
+          - label: "Specialized images"
+            name: "specializedImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+        
+      - label: "Ongoing Projects"
+        name: "ongoing-projects"
+        file: "content/project2.md"
+        fields:
+          - label: "All images"
+            name: "allImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+
+          - label: "Commercial images"
+            name: "commercialImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+          
+          - label: "Residential images"
+            name: "residentialImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }
+        
+          - label: "Specialized images"
+            name: "specializedImages"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string" }

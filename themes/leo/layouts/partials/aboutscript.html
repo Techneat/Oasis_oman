@@ -1,0 +1,361 @@
+{{- partial "scripts.html" . -}}
+
+<script src='../cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src='../npmcdn.com/isotope-layout%403.0.6/dist/isotope.pkgd.js'></script>
+<script>
+   $(document).ready(function(){
+     $('#carouselExampleControls video').height($('#carouselExampleControls .carousel-item').height());
+   });
+     $(document).ready(function(){
+    // $('#myCarousel video').height($('#myCarousel .carousel-item').height());
+   });
+</script>
+<link rel='stylesheet' href='/css/lightslider.css'>
+<script src='/js/lightslider.js'></script>
+<script>
+/* $(document).ready(function(){
+    $('#lightSlider').lightSlider({
+gallery: true,
+mode: "fade",
+item: 1,
+loop:true,
+slideMargin: 0,
+thumbItem: 9
+});
+});*/
+var lightboxDescription = GLightbox({
+selector: 'glightbox'
+});
+
+
+function call(id) {
+const items = Array.from(document.getElementsByClassName("filter"));
+items.map(function (item, index) {
+console.log(item);
+if (id === "all") {
+item.classList.remove('d-none');
+item.classList.add('fadeIn','glightbox');
+setTimeout(clean,500);
+} else {
+const check = items[index].classList.contains(id);
+console.log(check);
+
+if (check) {
+  item.classList.remove('d-none');
+  item.classList.add('fadeIn','glightbox');
+} else {
+  item.classList.add('d-none');
+  item.classList.remove('fadeIn','glightbox');
+}
+}
+})
+}
+
+function clean() {
+const items = Array.from(document.getElementsByClassName("filter"));
+items.map(function (item, index) {
+item.classList.remove('fadeIn');
+})
+}
+</script>
+<script src="/js/wow.js"></script>
+<script src="/js/common.js"></script>
+<script id="rendered-js">
+   $('body').on('mouseenter mouseleave', '.dropdown-hover', function (e) {
+   let dropdown = $(e.target).closest('.dropdown-hover');
+   dropdown.addClass('show');
+   
+   setTimeout(function () {
+   dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+   }, 200);
+   });
+   //# sourceURL=pen.js
+</script>
+<script>
+   function openSideNav() {
+       document.getElementById("mySidenav").style.width = "250px";
+   }
+   
+   /* Set the width of the side navigation to 0 */
+   function closeNav() {
+       document.getElementById("mySidenav").style.width = "0";
+   }
+</script>
+<script>
+   $(document).ready(function(){
+       $(".slide-toggle").click(function(){
+           $(".box").slideToggle();
+       });
+   });
+</script>
+<!--<script>
+   $(document).ready(function(){
+   $('.filters ul li').click(function(){
+   $('.filters ul li').removeClass('active');
+   $(this).addClass('active');
+   
+   var data = $(this).attr('data-filter');
+   $grid.isotope({
+    filter: data
+   })
+   });
+   
+   var $grid = $(".grid").isotope({
+   itemSelector: ".all",
+   percentPosition: true,
+   masonry: {
+    columnWidth: ".all"
+   }
+   })
+   ;
+    });
+</script>-->
+<script>
+   $(document).ready(function(){
+   $('.filters ul li').click(function(){
+   $('.filters ul li').removeClass('active');
+   $(this).addClass('active');
+   
+   var data = $(this).attr('data-filter');
+   $grid.isotope({
+    filter: data
+   })
+   });
+   
+   var $grid = $(".grid").isotope({
+   itemSelector: ".all",
+   percentPosition: true,
+   masonry: {
+    columnWidth: ".all"
+   }
+   })
+   ;
+    });
+</script>
+<script>
+   $(document).ready(function(){
+   
+   
+   $(".slidingDiv").hide();
+   $(".show_hide").show();
+   
+   $('.show_hide').click(function(){
+   $(".slidingDiv").slideToggle();
+   });
+   
+   $(document).on('click', function (e) {
+   var divwidth=$("#mySidenav");  
+   var closeset=$(e.target).closest(".sidenav");
+   if (closeset.length=== 0 && divwidth.width()!="0") { 
+        divwidth.width('0');
+   }   
+   });
+   
+   
+   });
+</script>
+<script type="text/jscript">
+ $(".tab-group-item-news").click(function(){
+     $(".magazinePageRight .tab-group-item-news").removeClass("active");
+     $(this).addClass("active");
+     var currentTab = $(this).attr("data-currtab");
+     $(".pressReleaseListing .newsPressList").removeClass("active");
+     $("#"+currentTab+"-releases").addClass("active");
+     $("#currentTab").val(currentTab);
+  });
+  
+  $(".tab-group-item").click(function(){
+     $("#myList .tab-group-item").removeClass("active");
+     $(this).addClass("active");
+     var currentTab = $(this).attr("data-currtab");
+     $(".ourmagazines .container.tab-pane").removeClass("active");
+     $("#ecc-"+currentTab).addClass("active");
+     $("#currentTab").val(currentTab);
+  });
+  
+  $(".tab-group-item-awards").click(function(){
+     $(".magazinePageRight .tab-group-item-awards").removeClass("active");
+     $(this).addClass("active");
+     var currentTab = $(this).attr("data-currtab");
+     $(".awardsListing .container").removeClass("active");
+     $("#awards-"+currentTab).addClass("active");
+     $("#currentTab").val(currentTab);
+  });
+  
+   $(document).ready(function () {
+      $('#pressYear').change(function () {
+            $('#pressYear').closest("form").submit();
+      });
+      $('#pressMonth').change(function () {
+            var yearVal = $("#pressYear").val();
+            if(yearVal != 0) {
+               $('#pressMonth').closest("form").submit();
+            }
+      });
+   });
+</script>
+<script src="/js/dReadmore.js"></script>
+
+<script>
+$(".d-readmore").dReadmore({
+beforeToggle: function($element, expanded) {
+      if (!expanded) {
+          console.log("true")
+      }
+  },
+  afterToggle: function($element, expanded) {
+      if (expanded) {
+          console.log("true")
+      }
+  }
+});
+
+
+
+$(".click-link").click(function (){
+var MainURL = 'index.html';
+$(location).attr('href',MainURL+'/iconic-projects/')
+});
+
+$(".project-detail video").on('play', function() {
+//Actions when video play selected
+$('.playpause').hide();
+});
+
+$(".project-detail video").on('pause', function() {
+//Actions when video pause selected
+$('.playpause').show();
+});
+
+
+$(document).ready(function() { 
+setTimeout(function() {
+    $('#lightSlider').lightSlider({
+gallery: true,
+mode: "fade",
+item: 1,
+loop:true,
+auto: true,
+pause: 6000,
+slideMargin: 0,
+thumbItem: 9
+});
+
+$('#lightSliderOurBusiness').lightSlider({
+gallery: true,
+mode: "fade",
+item: 1,
+loop:true,
+auto: true,
+pause: 6000,
+slideMargin: 0,
+thumbItem: 8
+});
+
+
+}, 500);
+});
+
+</script>
+
+<script type="text/javascript">
+$('.collapse').on('show.bs.collapse', function () {
+$('.collapse.show').each(function(){
+  $(this).collapse('hide');
+});
+});
+
+$(".pressReleaseSelect .tabsDiv li").click(function() {
+// $(".pressReleaseSelect .custom-select option").prop("selected", false);
+$(".pressReleaseSelect .custom-select option:selected").each(function(){
+    $(this).removeAttr("selected");
+  });
+var className = $(this).attr('id').replace('listyear-','');
+$('.pressReleaseSelect .custom-select option[value='+className+']').attr('selected','selected');
+$("#press-form").submit();
+})
+
+$(document).ready(function() {
+$(".career-tab-contents a").click(function() {
+  var currDiv = $(this).data("tab");
+  $(".row.car-info-tab").removeClass("active");
+  $(".row.car-info-tab."+currDiv).addClass("active");
+  $(".career-tab-contents a").removeClass("active");
+  $(this).addClass("active");
+})
+})
+
+$(document).ready(function(){
+  $('#ladiesSpeakCarousel').carousel({
+      // interval: 10000
+      interval: false
+  });
+  $('#leadersSpeakCarousel').carousel({
+      //interval: 10000
+      interval: false
+  });
+  
+  $('#ladiesSpeakCarousel .carousel-item').each(function() {
+          var minPerSlide = 1;
+          var next = $(this).next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i = 0; i < minPerSlide; i++) {
+              next = next.next();
+              if (!next.length) {
+                  next = $(this).siblings(':first');
+              }
+
+              next.children(':first-child').clone().appendTo($(this));
+          }
+      });
+      
+          $('#leadersSpeakCarousel .carousel-item').each(function() {
+          var minPerSlide = 4;
+          var next = $(this).next();
+          if (!next.length) {
+              next = $(this).siblings(':first');
+          }
+          next.children(':first-child').clone().appendTo($(this));
+
+          for (var i = 0; i < minPerSlide; i++) {
+              next = next.next();
+              if (!next.length) {
+                  next = $(this).siblings(':first');
+              }
+
+              next.children(':first-child').clone().appendTo($(this));
+          }
+      });
+      
+      
+      var $videoSrc;  
+      $('.video-btn').click(function() {
+          $videoSrc = $(this).data( "src" );
+      });
+      // when the modal is opened autoplay it  
+      $('#iconicWalkthroughVideoModal').on('shown.bs.modal', function (e) {
+          // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+          $("#walkthroughvideo").attr('src',$videoSrc + "?autoplay=0&amp;modestbranding=1&amp;showinfo=0"); 
+      });
+      
+      // stop playing the youtube video when I close the modal
+      $('#iconicWalkthroughVideoModal').on('hide.bs.modal', function (e) {
+          $("#walkthroughvideo").attr('src',""); 
+      }) 
+      
+      
+});
+</script>
+<script>
+const cond = document.getElementById('modelButtonCareer') || false
+if (cond) {
+  document.getElementById('modelButtonCareer').click();
+}
+</script>
+
+<script type="text/javascript" src="_Incapsula_Resource52a0?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=51&amp;cb=429397692" async></script></body>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Feb 2024 12:02:05 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project2</title>
+      <link>http://localhost:1313/project2/</link>
+      <pubDate>Mon, 26 Feb 2024 12:02:05 +0530</pubDate>
+      <guid>http://localhost:1313/project2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Client</title>
+      <link>http://localhost:1313/client/</link>
+      <pubDate>Thu, 15 Feb 2024 16:15:46 +0530</pubDate>
+      <guid>http://localhost:1313/client/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bannernew</title>
+      <link>http://localhost:1313/bannernew/</link>
+      <pubDate>Tue, 07 Nov 2023 15:51:40 +0530</pubDate>
+      <guid>http://localhost:1313/bannernew/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Awards</title>
+      <link>http://localhost:1313/awards/</link>
+      <pubDate>Tue, 07 Nov 2023 13:04:36 +0530</pubDate>
+      <guid>http://localhost:1313/awards/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Careers</title>
+      <link>http://localhost:1313/careers/</link>
+      <pubDate>Tue, 12 Sep 2023 16:46:20 +0530</pubDate>
+      <guid>http://localhost:1313/careers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Carousel</title>
+      <link>http://localhost:1313/carousel/</link>
+      <pubDate>Tue, 12 Sep 2023 12:44:39 +0530</pubDate>
+      <guid>http://localhost:1313/carousel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services</title>
+      <link>http://localhost:1313/services/</link>
+      <pubDate>Mon, 04 Sep 2023 12:44:35 +0530</pubDate>
+      <guid>http://localhost:1313/services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 04 Sep 2023 12:44:16 +0530</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Fri, 01 Sep 2023 17:00:06 +0530</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 01 Sep 2023 16:59:55 +0530</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
