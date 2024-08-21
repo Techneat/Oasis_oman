@@ -8,7 +8,7 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "about-us"
-    label: "About Us"
+    label: "AboutUs"
     files:
       - label: "Awards & Certifications"
         name: "awards"
