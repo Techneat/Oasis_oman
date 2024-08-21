@@ -5,13 +5,13 @@ draft: false
 type: "pages"
 layout: "awards"
 galleryImages:
-  - image: /img/cert/cert1.jpg
-  - image: /img/cert/cert2.jpg
-  - image: /img/cert/cert3.jpg
-  - image: /img/cert/cert4.jpg
-  - image: /img/cert/cert5.jpg
-  - image: /img/cert/cert6.jpg
-  - image: /img/cert/cert7.jpg
+  - cert1.jpg
+  - cert2.jpg
+  - cert3.jpg
+  - cert4.jpg
+  - cert5.jpg
+  - cert6.jpg
+  - cert7.jpg
 otherImages:
   - pic: awards1.jpeg
     caption: Award from Ministry of Manpower
