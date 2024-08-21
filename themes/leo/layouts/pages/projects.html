@@ -184,6 +184,85 @@
     </div>
 </div>
 
+
+
+
+<div class="container">
+    <nav class="text-center button-group ">
+        <div class="nav text-center" id="nav-tab" role="tablist">
+            <a class="nav-item btn btn-primary active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab"
+                style="transform: none !important;" aria-controls="nav-all" aria-selected="true">All</a>
+            <a class="nav-item btn btn-secondary" id="nav-commercial-tab" data-toggle="tab" href="#nav-commercial"
+                role="tab" style="transform: none !important;" aria-controls="nav-commercial"
+                aria-selected="false">Commercial</a>
+            <a class="nav-item btn btn-secondary" id="nav-residential-tab" data-toggle="tab" href="#nav-residential"
+                role="tab" style="transform: none !important;" aria-controls="nav-residential"
+                aria-selected="false">Residential</a>
+            <a class="nav-item btn btn-secondary" id="nav-specialized-tab" data-toggle="tab" href="#nav-specialized"
+                role="tab" style="transform: none !important;" aria-controls="nav-specialized"
+                aria-selected="false">Specialized</a>
+        </div>
+    </nav>
+    <div class=" image-container  mt-5 row-gap">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                <div class="row">
+                    {{ range $imageContent := .Params.allImages }}
+                    <div class="col-md-4 mb-4">
+                        <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
+                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+
+
+
+            <div class="tab-pane fade" id="nav-commercial" role="tabpanel" aria-labelledby="nav-commercial-tab">
+                <div class="row">
+                    {{ range $imageContent := .Params.commercialImages }}
+                    <div class="col-md-4 ">
+                        <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
+                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-residential" role="tabpanel" aria-labelledby="nav-residential-tab">
+                <div class="row">
+                    {{ range $imageContent := .Params.residentialImages }}
+                    <div class="col-md-4 ">
+                        <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
+                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-specialized" role="tabpanel" aria-labelledby="nav-specialized-tab">
+                <div class="row">
+                    {{ range $imageContent := .Params.specializedImages }}
+                    <div class="col-md-4 s">
+                        <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
+                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                    </div>
+                    {{end}}
+                </div>
+            </div>
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="caption-container">
+                        <div id="caption" class="caption"></div>
+                    </div>
+                    <img id="modalImage" style="height:400px">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+</div>
 <div style="margin-top: 40px;"></div>
    
 
