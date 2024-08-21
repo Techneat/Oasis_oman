@@ -5,17 +5,17 @@ draft: false
 type: "pages"
 layout: "awards"
 galleryImages:
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
-  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert2.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert3.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert4.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert5.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert6.jpg
+  - imageContent: https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert7.jpg
 otherImages:
-  - pic: awards1.jpeg
+  - pic: https://oasisoman.s3.ap-south-1.amazonaws.com/images/award1.jpeg
     caption: Award from Ministry of Manpower
-  - pic: awards2.jpeg
+  - pic: https://oasisoman.s3.ap-south-1.amazonaws.com/images/award2.jpeg
     caption: Award from Tamil Nadu governor Mr. Banwarilal Purohit
 ---
 
