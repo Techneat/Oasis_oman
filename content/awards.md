@@ -4,11 +4,18 @@ date: 2023-11-07T13:04:36+05:30
 draft: false
 type: "pages"
 layout: "awards"
-galleryImages: ['cert1.jpg', 'cert2.jpg', 'cert3.jpg', 'cert4.jpg', 'cert5.jpg', 'cert6.jpg', 'cert7.jpg']
+galleryImages:
+  - image: cert1.jpg
+  - image: cert2.jpg
+  - image: cert3.jpg
+  - image: cert4.jpg
+  - image: cert5.jpg
+  - image: cert6.jpg
+  - image: cert7.jpg
 otherImages:
-  - pic: 'award1.jpeg'
-    caption: 'Award from Ministry of Manpower'
-  - pic: 'award2.jpeg'
-    caption: 'Award from Tamil Nadu governor Mr. Banwarilal Purohit'
+  - pic: awards1.jpeg
+    caption: Award from Ministry of Manpower
+  - pic: awards2.jpeg
+    caption: Award from Tamil Nadu governor Mr. Banwarilal Purohit
 ---
 
