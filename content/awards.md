@@ -5,13 +5,13 @@ draft: false
 type: "pages"
 layout: "awards"
 galleryImages:
-  - cert1.jpg
-  - cert2.jpg
-  - cert3.jpg
-  - cert4.jpg
-  - cert5.jpg
-  - cert6.jpg
-  - cert7.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
+  - https://oasisoman.s3.ap-south-1.amazonaws.com/images/cert1.jpg
 otherImages:
   - pic: awards1.jpeg
     caption: Award from Ministry of Manpower
