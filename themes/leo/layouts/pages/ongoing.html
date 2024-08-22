@@ -190,7 +190,7 @@
                     {{ range $imageContent := .Params.commercialImages }}
                     <div class="col-md-4 ">
                         <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
-                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                        <figcaption class="text-white bg-dark p-2" style="font-size: 13px">{{ $imageContent.caption }}</figcaption>
                     </div>
                     {{end}}
                 </div>
@@ -200,7 +200,7 @@
                     {{ range $imageContent := .Params.residentialImages }}
                     <div class="col-md-4 ">
                         <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
-                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                        <figcaption class="text-white bg-dark p-2" style="font-size: 13px">{{ $imageContent.caption }}</figcaption>
                     </div>
                     {{end}}
                 </div>
@@ -210,7 +210,7 @@
                     {{ range $imageContent := .Params.specializedImages }}
                     <div class="col-md-4 ">
                         <img src="{{ $imageContent.image }}" class="img-fluid" style="margin-top:20px;cursor:pointer">
-                        <figcaption class="text-white bg-dark p-2">{{ $imageContent.caption }}</figcaption>
+                        <figcaption class="text-white bg-dark p-2"style="font-size: 13px;">{{ $imageContent.caption }}</figcaption>
                     </div>
                     {{end}}
                 </div>
