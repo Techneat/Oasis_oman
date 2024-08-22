@@ -131,8 +131,6 @@ allImages:
     caption: Suhail Bahwan Residential/Commericial Building
   - image: https://oasisoman.s3.ap-south-1.amazonaws.com/images/completed29.jpg
     caption: Sabco, Wattayah
-  - image: /img/clouth1.jpeg
-    caption: hujkjhkljkhj
 type: pages
 residentialImages:
   - image: https://oasisoman.s3.ap-south-1.amazonaws.com/images/completed8.jpg
